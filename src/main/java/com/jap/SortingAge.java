@@ -2,7 +2,8 @@ package com.jap;
 
 public class SortingAge {
 
-    //Write logic to sort the age using bubble sort
+    //Write the logic to sort the array containing the age in descending order
+    // inside the below method and return the sorted array
     public int[] getSortedAge(int [] ageArray){
 
         return new int[0];
@@ -10,11 +11,12 @@ public class SortingAge {
     }
 
     public static void main(String[] args) {
-        SortingAge sortingAge = new SortingAge();
-        //Declare and initialize integer array in the variable ageArray
-        int ageArray[] = null;
-        int sortedArray[] = sortingAge.getSortedAge(ageArray);
-        //use for loop to iterate through the 'sortedArray' to print the output
+        //Declare and initialize an integer array containing age.
+
+        //Create an object of the class SortingAge
+
+        //Call the method getSortedAge and pass the parameter
+
 
     }
 }
