@@ -6,17 +6,27 @@ public class SortingAge {
     // inside the below method and return the sorted array
     public int[] getSortedAge(int [] ageArray){
 
-        return new int[0];
+        for (int i = 0; i < ageArray.length; i++) {
+            for (int j = i+1; j < ageArray.length; j++) {
+                if(ageArray[i] < ageArray[j]){
+                    int temp = ageArray[i];
+                    ageArray[i] = ageArray[j];
+                    ageArray[j] = temp;
+                }
+            }
+
+        }
+        return ageArray;
 
     }
 
     public static void main(String[] args) {
-        //Declare and initialize an integer array containing age.
-
-        //Create an object of the class SortingAge
-
-        //Call the method getSortedAge and pass the parameter
-
+        int[] ageArray = {22,34,33,32,36,27,28};
+        SortingAge sortingAge  = new SortingAge();
+        int[] sortedArray = sortingAge.getSortedAge(ageArray);
+        for (int i = 0; i < ageArray.length; i++) {
+            System.out.print(ageArray[i] + ", ");
+        }
 
     }
 }
